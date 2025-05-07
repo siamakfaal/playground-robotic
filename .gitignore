@@ -1,0 +1,8 @@
+# macOS system files
+.DS_Store
+
+# Bazel output and working directories
+bazel-*
+
+# Bazel module lockfile (optional: ignore if you don't want it tracked)
+MODULE.bazel.lock
