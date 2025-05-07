@@ -1,0 +1,7 @@
+# src/urdf/BUILD.bazel
+
+filegroup(
+    name = "urdf",
+    srcs = glob(["**"]),
+    visibility = ["//visibility:public"],
+)

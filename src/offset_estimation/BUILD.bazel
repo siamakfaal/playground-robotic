@@ -1,0 +1,15 @@
+load("@python_deps//:requirements.bzl", "requirement")
+
+py_binary(
+    name = "planar_2d_offsets",
+    main = "planar_2d_offsets.py",
+    srcs = ["planar_2d_offsets.py"],
+    data = ["//src/urdf:urdf"],
+    deps = [
+        "@rules_python//python/runfiles",
+        requirement("numpy"),
+        requirement("roboticstoolbox-python"),
+    ],
+    visibility = ["//visibility:public"],
+    legacy_create_init = False,
+)

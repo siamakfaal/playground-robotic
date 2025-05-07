@@ -1,4 +1,6 @@
-# Bazel Template
+# Robotic Playground
+
+A sandbox environment for experimenting with robotics concepts and tools.
 
 ## Getting Started
 

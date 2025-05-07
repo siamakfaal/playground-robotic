@@ -1,11 +1,11 @@
 """
-Template
+Robotic Playground
 
 Siamak Faal
 siamak.faal@gmail.com
 """
 module(
-    name = "bazel_template",
+    name = "playground_robotic",
     version = "1.0",
 )
 
@@ -13,6 +13,7 @@ module(
 # Python 
 
 bazel_dep(name = "rules_python", version = "0.40.0")
+
 
 pip = use_extension("@rules_python//python/extensions:pip.bzl", "pip")
 pip.parse(
@@ -23,3 +24,19 @@ pip.parse(
 
 use_repo(pip, "python_deps")
 
+# python = use_extension("@rules_python//python/extensions:python.bzl", "python")
+# python.toolchain(
+#     python_version = "3.11",
+# )
+
+# pip = use_extension("@rules_python//python/extensions:pip.bzl", "pip")
+# pip.parse(
+#     hub_name = "python_deps",
+#     python_version = "3.11",
+#     requirements_lock = "//:requirements.txt",
+# )
+
+# use_repo(pip, "python_deps")
+
+# # Register toolchain
+# register_toolchains("@rules_python//python:all")
