@@ -9,6 +9,7 @@ py_binary(
         "@rules_python//python/runfiles",
         requirement("numpy"),
         requirement("roboticstoolbox-python"),
+        requirement("plotly"),
     ],
     visibility = ["//visibility:public"],
     legacy_create_init = False,
